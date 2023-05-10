@@ -2,8 +2,6 @@
     padding-top: 50px;
     padding-bottom: 20px;
 }
-
-/* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -11,14 +9,10 @@
     margin-top: 210px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
 .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
@@ -95,6 +89,8 @@ label.control-label {
     font-size: 12px !important;
     font-weight: bold;
 }
+
+
 input.btn.btn-default {
     background: #5555ff !important;
     border: 2px solid navy !important;
@@ -109,6 +105,7 @@ input.btn.btn-default {
         transition: 0.3s !important
     }
 
+
 .m-auto {
     margin: auto !important;
     text-align: center !important
@@ -121,7 +118,6 @@ input::placeholder {
 .d-flex {
     display: flex
 }
-
 
 .my-form-title {
     color: #fff;
@@ -141,4 +137,77 @@ input::placeholder {
         background: #ff5d5d;
         color: #000000;
         text-decoration: none !important
+    }
+
+
+.list-display li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.list-checkmarks {
+    padding-left:1.5rem;
+}
+    .list-checkmarks li {
+        list-style-type: none;
+        padding-left: 1rem;
+        color: #fff;
+    }
+    .list-checkmarks li:before {
+        content: "✔️";
+        margin: 0 10px 0 -28px;
+        color: #191970;
+    }
+
+
+.why-sec {
+    background: #ff70c69e;
+    padding: 50px 30px;
+}
+
+
+.why-sec-p {
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: #fff;
+}
+
+.wish-sec {
+    background: #ff70c69e;
+    padding: 50px 30px;
+}
+.wish-sec-txt {
+    font-size: 14px;
+    text-align: justify;
+    color: #fff;
+}
+
+.wish-sec svg {
+    width: 320px;
+    height: 320px;
+    fill: #26007b
+}
+
+.navbar-inverse {
+    background-color: #d9009159 !important;
+    border-color: #630080 !important;
+}
+    .navbar-inverse .navbar-nav > li > a {
+        color: #ffffff;
+    }
+
+
+    .navbar-inverse .navbar-brand {
+        color: #ffffff;
+    }
+
+
+input.btn.btn-default.back-btn {
+    background: #b655ff !important;
+}
+
+    input.btn.btn-default.back-btn::hover {
+        background: #5555ff !important;
     }

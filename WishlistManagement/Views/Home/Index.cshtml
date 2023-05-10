@@ -1,31 +1,73 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<div id="particle"></div>
+<div id="overlay">
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+
+    <section class="wish-sec">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <svg fill="#000000" viewBox="0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="ballons-celebration-heart-love-valentine"> <path d="M440,185.12C440,122.64,397.04,72,344,72c-45.52,0-83.52,37.2-93.44,87.28C233.76,126.16,203.12,104,168,104 c-53.04,0-96,50.64-96,113.12c0,51.721,29.441,95.28,69.685,108.774l-0.324,0.825l-12.443,24.09 c-3.182,6.161,2.443,13.234,9.131,11.404c6.738-1.844,14.545-3.601,21.953-4.429c0,14.71,0.054,32.933,5.327,52.316 c0.969,3.563,4.191,5.898,7.715,5.898c0.695,0,1.402-0.086,2.105-0.281c4.262-1.156,6.777-5.555,5.617-9.82 c-4.716-17.339-4.762-33.663-4.763-48.113c7.407,0.828,15.213,2.585,21.949,4.428c6.688,1.831,12.313-5.243,9.131-11.404 l-12.443-24.09l-0.317-0.808c33.351-11.207,59.222-42.925,67.117-82.952c12.395,24.479,32.478,42.934,56.253,50.913l-0.333,0.847 l-12.443,24.09c-3.182,6.161,2.443,13.234,9.131,11.404c6.737-1.844,14.544-3.6,21.951-4.428 c-0.001,29.896-0.231,70.658-45.12,108.066c-3.395,2.828-3.852,7.875-1.023,11.273c1.582,1.898,3.855,2.875,6.148,2.875 c1.805,0,3.621-0.609,5.117-1.852c50.63-42.191,50.877-89.127,50.878-120.363c7.408,0.828,15.215,2.585,21.953,4.429 c6.688,1.831,12.313-5.243,9.131-11.404l-12.443-24.09l-0.324-0.825C410.56,280.4,440,236.841,440,185.12z M213.76,233.6 l-32.48,32.88c-7.36,7.44-19.2,7.44-26.56,0l-32.48-32.88c-11.84-11.92-13.92-31.2-3.6-44.56c12.4-16.16,35.52-17.28,49.36-3.28 c13.84-14,36.96-12.88,49.36,3.28C227.68,202.4,225.6,221.68,213.76,233.6z M389.76,201.6l-32.48,32.88 c-7.36,7.44-19.2,7.44-26.56,0l-32.48-32.88c-11.84-11.92-13.92-31.2-3.6-44.56c12.4-16.16,35.52-17.28,49.36-3.28 c13.84-14,36.96-12.88,49.36,3.28C403.68,170.4,401.6,189.68,389.76,201.6z"></path> </g> <g id="Layer_1"></g> </g></svg>
+                </div>
+
+                @*<svg fill="#000000" viewBox="0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="ballon-celebration-love-_heart-valentine"> <path d="M352,185.12C352,122.64,309.04,72,256,72s-96,50.64-96,113.12c0,51.76,29.52,95.44,69.76,108.88l-12.827,24.803 c-3.187,6.161,2.438,13.238,9.128,11.408c6.735-1.843,14.537-3.598,21.94-4.425c0.001,31.236,0.248,78.172,50.874,120.363 c1.5,1.242,3.313,1.852,5.117,1.852c2.297,0,4.57-0.977,6.156-2.875c2.828-3.398,2.367-8.445-1.023-11.273 c-44.893-37.408-45.123-78.169-45.124-108.066c7.402,0.828,15.204,2.583,21.938,4.425c6.69,1.831,12.315-5.247,9.128-11.408 L282.24,294C322.48,280.56,352,236.88,352,185.12z M301.76,201.6l-32.48,32.88c-7.36,7.44-19.2,7.44-26.56,0l-32.48-32.88 c-11.84-11.92-13.92-31.2-3.6-44.56c12.4-16.16,35.52-17.28,49.36-3.28c13.84-14,36.96-12.88,49.36,3.28 C315.68,170.4,313.6,189.68,301.76,201.6z"></path> </g> <g id="Layer_1"></g> </g></svg>*@
+                <div class="col-md-6">
+
+                    <p class="wish-sec-txt">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+
+                    <a class="btn btn-default" href="/"> wishlist</a>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-sec">
+        <div class="container-fluid">
+            <div class="row">
+                <p class="why-sec-p">why WishMan?</p>
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <ul class="list-display list-checkmarks">
+                        <li>Not limited to one store</li>
+                        <li>Most of the others are</li>
+                        <li>No affiliates</li>
+                        <li>We are not tricking you or your friends to purchase from our affiliates</li>
+                        <li>You can add anything you want</li>
+                        <li>Add concrete items, immaterial things, donations, or enforce "no gifts" policy</li>
+                        <li>We won't give or sell your user information. You can ask others to use this service light hearted.</li>
+
+                    </ul>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <ul class="list-display list-checkmarks">
+                        <li>Privacy respected</li>
+                        <li>WishMan is free</li>
+                        <li>Spend your money on your loved ones</li>
+                        <li>WishMan grows with you</li>
+                        <li>Always available</li>
+                        <li>WishMan can be always with you, on desktop or on your mobile</li>
+                        <li>Your whole family can use it. All lists in one place</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+@section Scripts {
+    @*<script src="~/Content/js/particles.js"></script>*@
+    <script src="~/Content/js/particles.js"></script>
+    <script>
+        var options = { "particles": { "number": { "value": 99, "density": { "enable": true, "value_area": 552.4033491425909 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 3 }, "image": { "src": "img/github.svg", "width": 70, "height": 100 } }, "opacity": { "value": 1, "random": true, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 2, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": false, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 1.5782952832645452, "direction": "none", "random": true, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": false, "mode": "repulse" }, "onclick": { "enable": true, "mode": "repulse" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": false };
+        particlesJS("particle", options);
+    </script>
+}

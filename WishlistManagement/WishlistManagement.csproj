@@ -182,6 +182,7 @@
     <Content Include="Content\images\body-back1.jpg" />
     <Content Include="Content\images\body-back2.jpg" />
     <Content Include="Content\images\formback.jpg" />
+    <Content Include="Content\js\particles.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -227,6 +228,7 @@
     <Content Include="Views\WishList\Index.cshtml" />
     <Content Include="Views\WishList\Edit.cshtml" />
     <Content Include="Views\Authentication\Login.cshtml" />
+    <Content Include="Views\Home\Dashboard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
