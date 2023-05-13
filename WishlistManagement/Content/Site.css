@@ -211,3 +211,23 @@ input.btn.btn-default.back-btn {
     input.btn.btn-default.back-btn::hover {
         background: #5555ff !important;
     }
+
+
+.btn-delete-row { 
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 18px;
+    font-size: 14px;
+    border-radius: 50%;
+    background: #ff0000;
+    color: #fff;
+    margin: 5px 5px;
+    text-align: center;
+    padding: 0;
+    padding: 5px;
+} 
+
+.btn-delete-row svg{ 
+fill:#fff
+} 

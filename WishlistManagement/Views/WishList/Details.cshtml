@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Details";
 }
+
 <div id="particle"></div>
 <div id="overlay">
     <h2>Details</h2>
@@ -33,11 +34,66 @@
         @Html.ActionLink("Back to List", "Index", new { userId = Model.UserId })
     </p>
 
-    </div>
+
+    <form>
+        <table class="table-editable">
+            <thead>
+            <tr>
+                <th></th>
+                <th colspan="2">Edit Entries</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td rowspan="2" class="table-controls"></td>
+                <td class="input"><input type="text" placeholder="wish"></td>
+                <td class="input"><input type="text" placeholder="wish"></td>
+                <td class="input"><input type="text" placeholder="wish"></td>
+                <td class="input"><input type="text" placeholder="wish"></td>
+                <td rowspan="2" class="table-controls table-zapper"><a class="jDeleteRow btn-delete-row" type="button"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M22,5H17V2a1,1,0,0,0-1-1H8A1,1,0,0,0,7,2V5H2A1,1,0,0,0,2,7H3.117L5.008,22.124A1,1,0,0,0,6,23H18a1,1,0,0,0,.992-.876L20.883,7H22a1,1,0,0,0,0-2ZM9,3h6V5H9Zm8.117,18H6.883L5.133,7H18.867Z"></path></g></svg></a></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="table-divider"></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="4" class="table-submit">
+                    <button type="button" class="jAddRow btn-default btn">Add Row</button>
+                </td>
+            </tr>
+            </tfoot>
+        </table>
+        <br>
+
+    </form>
+
+
+</div>
     @section Scripts {
         <script src="~/Content/js/particles.js"></script>
         <script>
             var options = { "particles": { "number": { "value": 99, "density": { "enable": true, "value_area": 552.4033491425909 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 3 }, "image": { "src": "img/github.svg", "width": 70, "height": 100 } }, "opacity": { "value": 1, "random": true, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 2, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": false, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 1.5782952832645452, "direction": "none", "random": true, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": false, "mode": "repulse" }, "onclick": { "enable": true, "mode": "repulse" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": false };
             particlesJS("particle", options);
+        </script>
+        
+        <script>
+            $(".jDeleteRow").click(function() {
+  var rowCount = $(this).closest('table').find('tbody').length;
+  if (rowCount > 1) {
+    $(this).closest('tbody').remove();
+                }
+                window.alert("are you sure?");
+        });
+
+$(".jAddRow").click(function() {
+  var lastRow = $(this).closest('table').find('tbody').last();
+  var newRow = lastRow.clone(true, true); //use true to copy event bindings with rows.  Doesn't always work with 3rd party plugins.
+  newRow.find('input').val('');
+  newRow.find('.jDeleteRow').removeAttr("disabled");
+  newRow.insertAfter(lastRow);
+});
+
         </script>
     }
